@@ -8,6 +8,7 @@ class ListingSerializer(serializers.ModelSerializer):
             'id',
             'link',
             'status',
+            'price',
             'address',
             'description',
             'date_posted',
