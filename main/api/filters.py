@@ -9,7 +9,7 @@ class GuelphFilter(django_filters.FilterSet):
         fields = {
             'price' :['iexact', 'lt', 'gt', 'range'],
             'date_posted' : ['range'],
-            'bedroom_count': ['iexact', 'lt', 'gt', 'range'],
+            'bedroom_count': ['exact', 'lt', 'gt', 'range'],
             'bathroom_count':['iexact', 'lt', 'gt', 'range'],
             'utilities':['Included', 'Excluded']
         }
